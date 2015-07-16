@@ -1,0 +1,95 @@
+$time = 10s;
+
+body {
+  background: grey;
+}
+
+@import "scoreboard.styl"
+@import "pitch.styl"
+@import "players.styl"
+@import "announcer.styl"
+
+.stage {
+  background-color: white;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 600px;
+}
+
+.alonelysquare {
+  background-color: black;
+  display: black;
+  height: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: animate-square $time ease 0s infinite;
+}
+
+
+/* ****************** */
+/* *** ANIMATIONS *** */
+/* ****************** */
+
+@keyframes animate-square {
+  0% {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+  15% {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+  16% {
+    height: 190px;
+    width: 190px;
+    margin-top: -95px;
+    margin-left: -95px;
+  }
+  18% {
+    background-color: green;
+    height: 600px;
+    width: 600px;
+    margin-top: -300px;
+    margin-left: -300px;
+  }
+  82% {
+    background-color: green;
+    height: 600px;
+    width: 600px;
+    margin-top: -300px;
+    margin-left: -300px;
+  }
+  84% {
+    height: 190px;
+    width: 190px;
+    margin-top: -95px;
+    margin-left: -95px;
+  }
+  85% {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+  100% {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+}

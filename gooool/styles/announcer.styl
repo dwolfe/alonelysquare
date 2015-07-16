@@ -1,0 +1,156 @@
+.announcer {
+  height: 2000px;
+  width: 2000px;
+  letter-spacing: 1;
+  margin-top: -1000px;
+  margin-left: -1000px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+
+  span {
+    color: white;
+    font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+//    font-family: "CartoGothic Std", "Verdana", "Lucida Grande", "Gill Sans", "Arial", "Helvetica", sans-serif;
+    line-height: 2000px;
+    height: 2000px;
+    width: 2000px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+
+    &.one {
+      animation: animate-gol-one $time ease-out 0s infinite;
+    }
+    &.two {
+      animation: animate-gol-two $time ease-out 0s infinite;
+    }
+    &.three {
+      animation: animate-gol-three $time ease-out 0s infinite;
+    }
+    &.four {
+      animation: animate-gol-four $time ease-out 0s infinite;
+    }
+    &.five {
+      animation: animate-gol-five $time ease-out 0s infinite;
+    }
+  }
+}
+
+
+/* ****************** */
+/* *** ANIMATIONS *** */
+/* ****************** */
+
+@keyframes animate-gol-one {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  42% {
+    font-size: 0;
+    opacity: 0;
+  }
+  48% {
+    opacity: 1;
+  }
+  54% {
+    font-size: 512px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 512px;
+    opacity: 0;
+  }
+}
+
+@keyframes animate-gol-two {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  48% {
+    font-size: 0;
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+  }
+  60% {
+    font-size: 512px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 512px;
+    opacity: 0;
+  }
+}
+
+@keyframes animate-gol-three {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  54% {
+    font-size: 0;
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    font-size: 512px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 512px;
+    opacity: 0;
+  }
+}
+
+@keyframes animate-gol-four {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  60% {
+    font-size: 0;
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  76% {
+    font-size: 512px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 512px;
+    opacity: 0;
+  }
+}
+
+@keyframes animate-gol-five {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  66% {
+    font-size: 0;
+    opacity: 0;
+  }
+  72% {
+    opacity: 1;
+  }
+  82% {
+    font-size: 512px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 512px;
+    opacity: 0;
+  }
+}

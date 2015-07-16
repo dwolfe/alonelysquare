@@ -1,0 +1,293 @@
+.ball {
+  background: white;
+  border: solid black 2px;
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  animation: animate-ball $time ease-out 0s infinite;
+}
+
+.player {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 24px;
+  width: 26px;
+  height: 26px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+
+  &.usa {
+    background: white;
+    border-color: #b4cc16;
+    color: #181c6b;
+  }
+
+  &.japan {
+    background: blue;
+    border-color: #fb2ff4;
+    color: white;
+  }
+
+  &.carli-lloyd {
+    animation: animate-carli-lloyd $time linear 0s infinite;
+    text-indent: -1px;
+  }
+
+  &.rumi-utsugi {
+    animation: animate-rumi-utsugi $time linear 0s infinite;
+    text-indent: -1px;
+    left: 40px;
+  }
+
+  &.ayumi-kaihori {
+    background: lighten(green, 20%);
+    border-color: white;
+    color: white;
+    animation: animate-ayumi-kaihori $time linear 0s infinite;
+    text-indent: -1px;
+    z-index: 4;
+    left: 70px;
+  }
+}
+
+
+/* ****************** */
+/* *** ANIMATIONS *** */
+/* ****************** */
+
+@keyframes animate-ball {
+  0% {
+    opacity: 0;
+    left: 310px;
+    top: 620px;
+  }
+  16% {
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+    left: 310px;
+    top: 620px;
+  }
+  // Fade in complete
+  20% {
+    left: 263px;
+    top: 528px;
+  }
+  21% {
+    left: 263px;
+    top: 528px;
+  }
+  24% {
+    left: 311px;
+    top: 475px;
+  }
+  25% {
+    left: 311px;
+    top: 475px;
+  }
+  28% {
+    left: 332px;
+    top: 422px;
+  }
+  29% {
+    left: 332px;
+    top: 422px;
+    animation-timing-function: linear;
+  }
+  38% {
+    left: 284px;
+    top: 70px;
+    animation-timing-function: linear;
+  }
+  40% {
+    left: 276px;
+    top: 44px;
+    animation-timing-function: linear;
+  }
+  // Fade out start
+  82% {
+    opacity: 1;
+    left: 276px;
+    top: 44px;
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    left: 276px;
+    top: 44px;
+  }
+}
+
+@keyframes animate-carli-lloyd {
+  0% {
+    opacity: 0;
+    left: 163px;
+    top: 556px;
+  }
+  12% {
+    left: 163px;
+    top: 556px;
+  }
+  16% {
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+  }
+  20% {
+    left: 247px;
+    top: 528px;
+  }
+  21% {
+    left: 247px;
+    top: 528px;
+  }
+  24% {
+    left: 301px;
+    top: 489px;
+  }
+  25% {
+    left: 301px;
+    top: 489px;
+  }
+  28% {
+    left: 324px;
+    top: 436px;
+  }
+  29% {
+    left: 324px;
+    top: 436px;
+  }
+  32% {
+    top: 400px;
+  }
+  82% {
+    opacity: 1;
+    left: 324px;
+    top: 400px;
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    left: 324px;
+    top: 400px;
+  }
+}
+
+@keyframes animate-rumi-utsugi {
+  0% {
+    opacity: 0;
+    left: 439px;
+    top: 512px;
+  }
+  14% {
+    left: 439px;
+    top: 512px;
+  }
+  16% {
+    opacity: 0;
+  }
+  19% {
+    opacity: 1;
+    left: 339px;
+    top: 497px;
+  }
+  20% {
+    left: 339px;
+    top: 497px;
+  }
+  24% {
+    left: 285px;
+    top: 465px;
+  }
+  25% {
+    left: 285px;
+    top: 465px;
+  }
+  29% {
+    left: 293px;
+    top: 434px;
+  }
+  30% {
+    left: 293px;
+    top: 434px;
+    animation-timing-function: ease-out;
+  }
+  38% {
+    left: 295px;
+    top: 360px;
+  }
+  82% {
+    opacity: 1;
+    left: 295px;
+    top: 360px;
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    left: 295px;
+    top: 360px;
+  }
+}
+
+@keyframes animate-ayumi-kaihori {
+  0% {
+    opacity: 0;
+    left: 310px;
+    top: 153px;
+  }
+  16% {
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+  }
+  25% {
+    left: 310px;
+    top: 153px;
+  }
+  29% {
+    left: 300px;
+    top: 130px;
+  }
+  30% {
+    left: 300px;
+    top: 130px;
+  }
+  37% {
+    left: 284px;
+    top: 70px;
+  }
+  40% {
+    left: 272px;
+    top: 66px;
+  }
+  82% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    left: 272px;
+    top: 66px;
+  }
+}
